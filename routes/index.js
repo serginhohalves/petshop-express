@@ -3,7 +3,7 @@ var router = express.Router();
 
 const petsController = require('../controller/petsController'); // Importa o controller
 const servicoController = require('../controller/serviceController'); // Importa o controller
-
+const usuarioController = require('../controller/usuarioController'); // Importa o controller
 
 
 /* GET home page. */
@@ -17,6 +17,7 @@ router.get('/', function(req, res) {
 
 router.get('/servico', servicoController.listaServicos);
 router.get('/pet', petsController.listaPets);
+router.get('/cadastro', usuarioController.cadastro);
 
 
 
